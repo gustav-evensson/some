@@ -1,2 +1,2 @@
-# some
+# SoMe
 SoMe Main Codebase
