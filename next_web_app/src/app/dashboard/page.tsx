@@ -1,5 +1,5 @@
 import GradientAvatar from "@/components/gradient-avatar";
-import SomeTextLogoGradient from "@/components/some-text-logo-gradient";
+import SomeTextLogoGradient from "@/components/icons/some/some-text-logo-gradient";
 import { Button } from "@/components/ui/button";
 import { user } from "@/lib/dummy-data";
 import Link from "next/link";

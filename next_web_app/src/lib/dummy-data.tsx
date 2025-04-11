@@ -1,26 +1,28 @@
+import InstagramIcon from "@/components/icons/social/instagram";
+import TikTokIcon from "@/components/icons/social/tiktok";
+import YouTubeIcon from "@/components/icons/social/youtube";
+
 type Team = {
   id: string;
   name: string;
   gradient: string[];
-}
+};
 
 type User = {
   id: string;
   name: string;
   email: string;
   gradient: string[];
-  // company: string;
   role: string;
   location: string;
   teams: Team[];
-}
+};
 
 export const user: User = {
   id: "123e4567-e89b-12d3-a456-426614174013",
   name: "Gustav Evensson",
   email: "gustav@some.se",
   gradient: ["ff6467", "51a2ff"],
-  // company: "SoMe",
   role: "Founder",
   location: "Stockholm, Sweden",
   teams: [
@@ -40,25 +42,35 @@ export const user: User = {
       gradient: ["FFD700", "FF8C00"],
     },
   ],
-}
+};
 
-export const platforms = [
+export type Platform = {  
+  name: string;
+  value: string;
+  icon: React.ElementType;
+  color: string;
+};
+
+export const platforms: Platform[] = [
   {
     name: "Instagram",
     value: "instagram",
-    icon: "@/public/instagram.svg",
+    icon: InstagramIcon,
+    color: "#0000FF",
   },
   {
     name: "TikTok",
     value: "tiktok",
-    icon: "@/public/tiktok.svg",
+    icon: TikTokIcon,
+    color: "#00FF00",
   },
   {
     name: "YouTube",
     value: "youtube",
-    icon: "@/public/youtube.svg",
+    icon: YouTubeIcon,
+    color: "#FF0000",
   },
-]
+];
 
 export const vibrantColors = [
   "FF5733", // Bright Red-Orange
@@ -70,7 +82,7 @@ export const vibrantColors = [
   "8000FF", // Vivid Purple
   "00E5FF", // Cyan Blue
   "FF0066", // Neon Magenta
-  "39FF14"  // Electric Lime
+  "39FF14", // Electric Lime
 ];
 
 export const getRandomGradient = () => {
@@ -80,4 +92,4 @@ export const getRandomGradient = () => {
     colorId2 = Math.floor(Math.random() * vibrantColors.length);
   }
   return [vibrantColors[colorId1], vibrantColors[colorId2]];
-}
+};

@@ -1,0 +1,28 @@
+
+.some-loader {
+  animation: rotate 2s linear infinite;
+}
+
+.some-loader-inner-path {
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+  animation: path-animation 1.5s linear infinite;
+}
+
+.some-loader-outer-path {
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+  animation: path-animation 3s linear infinite reverse;
+}
+
+@keyframes path-animation {
+  0% {
+    stroke-dashoffset: 100;
+  }
+  50% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: -100;
+  }
+}

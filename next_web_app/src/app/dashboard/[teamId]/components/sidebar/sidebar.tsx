@@ -1,4 +1,4 @@
-import SomeLogoSolid from "@/components/some-logo-solid";
+import SomeLogoSolid from "@/components/icons/some/some-logo-solid";
 import SidebarNav from "./sidebar-nav";
 import { Separator } from "@/components/ui/separator";
 import { SidebarUser } from "./sidebar-user/sidebar-user";
